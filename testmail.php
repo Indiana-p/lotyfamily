@@ -1,7 +1,7 @@
 <?php
 $to = "philippe.loty@gmail.com"; 
 $subject = "Test mail PHP"; 
-$content = htmlspecialchars($_POST['nom']);;
+$content = $_POST['nom'];
 $headers = "From: Website <SendingEmail@lotyfamily.com>\r\nReply-To: SendingEmail@lotyfamily.com";
 
 if (mail($to, $subject, $content, $headers))
